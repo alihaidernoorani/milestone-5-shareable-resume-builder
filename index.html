@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shareable Resume Builder by Ali Haider Noorani</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="container">
+        <!-- Forms Section -->
+        <section id="formSection">
+            <h1>Shareable Resume Builder</h1>
+            <!-- Personal Information Form -->
+            <form id="personalInfoForm">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="profilePicture">Profile Picture</label>
+                    <input type="file" id="profilePicture" accept="image/*" required>
+                    <label for="username">Username (for shareable link)</label>
+                    <input type="text" id="username" required>
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" required>
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" required>
+                    <label for="address">Address</label>
+                    <input type="text" maxlength="100" id="address" required>
+                    <label for="linkedin">LinkedIn Profile</label>
+                    <input type="text" id="linkedin" required>
+                    <label for="tel">Phone No</label>
+                    <input type="tel" id="tel" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                    <button type="submit">Update Resume</button>
+                </fieldset>
+            </form>
+            <!-- Education Form -->
+            <form id="educationInfoForm">
+                <fieldset>
+                    <legend>Education</legend>
+                    <label for="school">School Name</label>
+                    <input type="text" id="school" required>
+                    <label for="schoolLocation">School Location</label>
+                    <input type="text" id="schoolLocation" required>
+                    <label for="degree">Degree</label>
+                    <select required>
+                        <option>High School Diploma</option>
+                        <option>GED</option>
+                        <option>Associate of Arts</option>
+                        <option>Associate of Science</option>
+                        <option>Associate of Applied Science</option>
+                        <option>Bachelor of Arts</option>
+                        <option>Bachelor of Science</option>
+                        <option>BBA</option>
+                        <option>Master of Arts</option>
+                        <option>Master of Science</option>
+                        <option>MBA</option>
+                        <option>MBBS</option>
+                        <option>Ph.D.</option>
+                        <option>Enter a different degree</option>
+                        <option>No degree</option>
+                    </select>
+                    <label for="other">Other Degree</label>
+                    <input type="text" id="other">
+                    <label for="study">Field of Study</label>
+                    <input type="text" id="study" required>
+                    <label for="grad">Graduation Date (Or Expected Graduation Date)</label>
+                    <input type="date" id="grad" required>
+                    <button type="submit">Update Resume</button>
+                </fieldset>
+            </form>
+            <!-- Experience Form -->
+            <form id="experienceInfoForm">
+                <fieldset>
+                    <legend>Experience</legend>
+                    <label for="jobTitle">Job Title</label>
+                    <input type="text" id="jobTitle" required>
+                    <label for="employer">Employer</label>
+                    <input type="text" id="employer" required>
+                    <label for="location">Location</label>
+                    <input type="text" id="location">
+                    <label for="remote">
+                        <input type="checkbox" id="remote">
+                        Remote
+                    </label><br><br>
+                    <label for="start">Start Date</label>
+                    <input type="date" id="start" required>
+                    <label for="end">End Date</label>
+                    <input type="date" id="end">
+                    <label for="work">
+                        <input type="checkbox" id="work">
+                        I currently work here
+                    </label>
+                    <button type="submit">Update Resume</button>
+                </fieldset>
+            </form>
+            <!-- Skills Form -->
+            <form id="skillsInfoForm">
+                <fieldset>
+                    <legend>Skills</legend>
+                    <label for="skill">Skills</label>
+                    <input type="text" id="skill">
+                    <button type="submit">Update Resume</button>
+                </fieldset>
+            </form>
+            
+        </section>
+        <!-- Resume Section -->
+        <section id="resumeSection">
+            <div id="buttonsContainer"></div>
+            <div id="profileContainer">
+                <div id="profilePic"></div>
+                <h2 id="personalInformationHeading">Personal Information</h2>
+                <p id="personalInformation"></p>
+            </div>
+
+            <div id="education">
+                <h2 id="educationHeading">Education</h2>
+                <p id="educationDetails"></p>
+            </div>
+
+            <div id="experience">
+                <h2 id="experienceHeading">Experience</h2>
+                <p id="experienceDetails"></p>
+            </div>
+
+            <div id="skills">
+                <h2 id="skillsHeading">Skills</h2>
+                <p id="skillsList"></p>
+            </div>
+        </section>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

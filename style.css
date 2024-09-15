@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+}
+
+#container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#formSection {
+    flex: 1;
+    float: left;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 50%;
+}
+
+#resumeSection {
+    flex: 1;
+    float: right;
+    max-width: 50%;
+    margin-top: auto;
+}
+
+h1 {
+    color: #007bff;
+}
+
+fieldset {
+    border: 2px solid #333;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 10px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+input, select, textarea {
+    padding: 5px;
+    margin:10px 0;
+    width: 100%;
+}
+
+#remote, #work {
+    max-width: fit-content;
+}
+
+button {
+    width:150px;
+    height:25px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d8dee6;
+}
+
+#resumeSection {
+    width: 600px;
+    height: 707px;
+    padding: 20px;
+    margin: 50px;
+    background-color: #ffffff; 
+    color: #333333; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: 2px solid #e5e5e5;
+}
+
+h1 {
+    color: #007bff; 
+    text-align: center;
+}
+
+h2 {
+    border-bottom: 2px solid #007bff;
+    padding: 2px;
+    margin-bottom: 20px;
+}
+
+#personalInformationHeading,
+#educationHeading,
+#experienceHeading,
+#skillsHeading {
+    display: none;
+}
+
+p {
+    line-height: 1.5;
+}
+
+#profilePic {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+#buttonsContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 45px;
+}
+
+#buttonsContainer button {
+font-weight: bold;
+background-color: #007bff;
+color: white;
+padding: 15px;
+margin-bottom: 25px;
+}
